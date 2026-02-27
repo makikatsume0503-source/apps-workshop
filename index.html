@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIを使ってプログラミング未経験でもオリジナルアプリが作成できるワークショップ。90分であなただけのアプリを完成させましょう！">
+    <title>AIで自分だけのアプリを作ろう！オリジナルアプリ作成ワークショップ</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-image-wrapper fade-up">
+                    <img src="hero-image.jpg" alt="ワークショップのイメージ" class="hero-image">
+                </div>
+                <div class="hero-text fade-up delay-1">
+                    <p class="hero-pre-title">AIでプログラミングの壁を越える！</p>
+                    <h1 class="hero-title">
+                        <span class="text-gradient">オリジナルアプリ作成</span><br>ワークショップ
+                    </h1>
+                    <p class="hero-subtitle">
+                        最新の生成AIを使って、世界に一つだけのオリジナルアプリを作りませんか？<br>90分のステップ・バイ・ステップで、アイデアを形にする感動を体験できます。</p>
+                    <div class="cta-pulse-wrapper fade-up delay-2">
+                        <a href="#apply" class="cta-button cta-button-large">90分 5,500円<br><span
+                                class="cta-sub">ワークショップに申し込む</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="troubles section">
+        <div class="container">
+            <h2 class="section-title fade-up">こんなお悩み、<br class="mobile-break">ありませんか？</h2>
+            <div class="problem-grid">
+                <div class="glass-card problem-card fade-up delay-1">
+                    <div class="card-icon">
+                        <svg style="width: 40px; height: 40px; stroke: var(--primary);"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.829 1.508-2.316a7.5 7.5 0 10-7.516 0c.85.487 1.508 1.333 1.508 2.316V18" />
+                        </svg>
+                    </div>
+                    <p>AIには興味があるけれど使い方がわからない</p>
+                </div>
+                <div class="glass-card problem-card fade-up delay-2">
+                    <div class="card-icon">
+                        <svg style="width: 40px; height: 40px; stroke: var(--primary);"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <p>日常生活や業務をもっと効率化したい</p>
+                </div>
+                <div class="glass-card problem-card fade-up delay-3">
+                    <div class="card-icon">
+                        <svg style="width: 40px; height: 40px; stroke: var(--primary);"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                        </svg>
+                    </div>
+                    <p>市販のアプリは広告があってわずらわしい</p>
+                </div>
+                <div class="glass-card problem-card fade-up delay-4">
+                    <div class="card-icon">
+                        <svg style="width: 40px; height: 40px; stroke: var(--primary);"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
+                        </svg>
+                    </div>
+                    <p>自分専用にカスタマイズしたツールが欲しい</p>
+                </div>
+                <!-- 5th Problem Card -->
+                <div class="glass-card problem-card fade-up delay-5">
+                    <div class="card-icon">
+                        <svg style="width: 40px; height: 40px; stroke: var(--primary);"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>
+                    </div>
+                    <p>日々の名もなき家事や育児の記録をラクにしたい</p>
+                </div>
+            </div>
+
+            <div class="solution fade-up delay-1">
+                <h3 class="solution-title"><span class="text-gradient">「AI×ノーコード/ローコード」</span>なら<br>そのお悩みをサクッと解決できます
+                </h3>
+                <p class="solution-text">
+                    最新のAI開発ツールを使えば、専門的なプログラミング言語の暗記は不要です。<br>
+                    <strong>「こんな機能が欲しい」「こういう見た目にしたい」</strong>という簡単な言葉（プロンプト）をAIに伝えるだけで、AIが自動的にコードを書き、アプリが完成していきます。
+                </p>
+                <div class="feature-tags">
+                    <span class="tag"># 高品質なコードを数秒で思いのままに生成</span>
+                    <span class="tag"># あなたの課題を解決する専用ツールが作れる</span>
+                    <span class="tag"># 専門用語がわからなくても大丈夫</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="examples section bg-light">
+        <div class="container">
+            <h2 class="section-title fade-up">90分で作れるアプリの例</h2>
+            <p class="section-subtitle fade-up">PCブラウザやスマホですぐに動かせるアプリが、数十分で完成します。</p>
+
+            <div class="grid examples-grid">
+                <div class="glass-card example-card fade-up">
+                    <div class="card-icon">
+                        <svg style="width: 40px; height: 40px; stroke: var(--primary);"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h4>タスク管理・日記アプリ</h4>
+                    <p>あなた専用の使いやすいタスク管理や日記アプリを作れます。</p>
+                </div>
+                <div class="glass-card example-card fade-up delay-1">
+                    <div class="card-icon">
+                        <svg style="width: 40px; height: 40px; stroke: var(--primary);"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                        </svg>
+                    </div>
+                    <h4>学習アプリ</h4>
+                    <p>計算・漢字・英語など学べるアプリを作成できます。</p>
+                </div>
+                <div class="glass-card example-card fade-up delay-2">
+                    <div class="card-icon">
+                        <svg style="width: 40px; height: 40px; stroke: var(--primary);"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a1.5 1.5 0 01-1.5 1.5H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V8.837c0-.621-.504-1.125-1.125-1.125h-2.813V6.088z" />
+                        </svg>
+                    </div>
+                    <h4>ゲーム</h4>
+                    <p>国旗あて・神経衰弱などお子さんのためのゲームが作れます。</p>
+                </div>
+
+                <div class="glass-card example-card fade-up delay-1">
+                    <div class="card-icon">
+                        <svg style="width: 40px; height: 40px; stroke: var(--primary);"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                        </svg>
+                    </div>
+                    <h4>おみくじ・占い</h4>
+                    <p>今日の運勢や相性を楽しく占うミニゲーム。</p>
+                </div>
+                <div class="glass-card example-card fade-up delay-2">
+                    <div class="card-icon">
+                        <svg style="width: 40px; height: 40px; stroke: var(--primary);"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.829 1.508-2.316a7.5 7.5 0 10-7.516 0c.85.487 1.508 1.333 1.508 2.316V18" />
+                        </svg>
+                    </div>
+                    <h4>アイデアメモアプリ</h4>
+                    <p>思いついたことをパッと残せる便利なメモ帳。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits section">
+        <div class="container">
+            <h2 class="section-title fade-up">ワークショップで得られる<br class="mobile-break">3つの体験</h2>
+
+            <div class="timeline">
+                <div class="timeline-item fade-up">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content glass-card">
+                        <h3>AIへの上手な指示の出し方</h3>
+                        <p>AIに思い通りのアプリを作らせるための、ちょっとしたコツ（プロンプトエンジニアリング）を伝授。初心者でもすぐに思いを形にできるようになります。</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-up delay-1">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content glass-card">
+                        <h3>「マイアプリ」の完成と感動</h3>
+                        <p>自分のアイデアが実際に画面上で動く感動を味わえます。完成したアプリは、その日からすぐにあなたの生活や仕事で活躍します。</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-up delay-2">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content glass-card">
+                        <h3>参加者同士のアイデアシェア</h3>
+                        <p>同じように「何かを作りたい！」という思いを持った参加者たちと、AIをどう活用していくかアイデアを共有。新しい発見と仲間作りの場になります。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="curriculum section bg-light">
+        <div class="container">
+            <h2 class="section-title fade-up">充実の90分カリキュラム</h2>
+            <div class="glass-card curriculum-card fade-up">
+                <ul class="curriculum-list">
+                    <li>
+                        <span class="time">10 min</span>
+                        <div class="desc">
+                            <strong>はじめに & AIアプリ開発のキホン</strong>
+                            <p>AIがどのようにコードを書くのか、基本的なしくみを分かりやすく解説します。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="time">20 min</span>
+                        <div class="desc">
+                            <strong>【実践】プロンプトのコツを掴もう</strong>
+                            <p>実際にAI開発ツールに触れながら、AIに伝わりやすい指示の書き方を練習します。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="time">45 min</span>
+                        <div class="desc">
+                            <strong>【ワーク】オリジナルアプリを作ろう</strong>
+                            <p>自分の作りたいアプリのアイデアを形にします。講師がしっかりサポートするので安心です。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="time">15 min</span>
+                        <div class="desc">
+                            <strong>作品発表 & 交流会</strong>
+                            <p>完成したアプリをみんなでお披露目！お互いのアイデアから刺激をもらいましょう。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="instructor section">
+        <div class="container">
+            <h2 class="section-title fade-up">講師紹介</h2>
+            <div class="instructor-profile glass-card fade-up">
+                <div class="instructor-image">
+                    <img src="C:\Users\moca1\.gemini\antigravity\brain\1faad7db-bfc1-4620-ba29-98bdff885787\image.jpeg"
+                        alt="勝目 麻希" class="profile-img">
+                </div>
+                <div class="instructor-info">
+                    <h3 class="instructor-name">勝目 麻希 <span class="instructor-en">Maki Katsume</span></h3>
+                    <p class="instructor-title">フリーランスライター & AI活用インストラクター</p>
+                    <p class="instructor-desc">
+                        「テクノロジーを味方につけて、自由な働き方・生き方を」をテーマに活動中。難しく感じるITツールやAI技術も、未経験の方にわかりやすく伝えます。一緒に新しい一歩を踏み出し、「自分にも作れた！」という感動を体験しましょう。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apply" class="apply section fade-up">
+        <div class="container">
+            <div class="apply-box glass-card">
+                <h2 class="apply-title">開催概要・お申し込み</h2>
+
+                <div class="apply-details">
+                    <dl>
+                        <dt>開催日時</dt>
+                        <dd>2026年3月〇〇日 (金) 10:00 - 11:30（予定）</dd>
+
+                        <dt>開催場所</dt>
+                        <dd>オンライン（Zoomミーティング）</dd>
+
+                        <dt class="highlight-dt">持ち物・準備</dt>
+                        <dd class="highlight-dd">
+                            <span class="requirement-badge">パソコン必須</span><br>
+                            ※実際にアプリ開発の操作を行うため、必ずPC（Windows / Mac）からご参加ください。<br>
+                            ※ブラウザ（Chrome等）が使用できる環境をご用意ください。
+                        </dd>
+
+                        <dt>参加費</dt>
+                        <dd>5,500円（税込）</dd>
+                    </dl>
+                </div>
+
+                <div class="apply-action">
+                    <p class="notice">※お申し込みフォームへ遷移します（現在はデモ用）</p>
+                    <button class="cta-button large pulse">いますぐ申し込む</button>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-links">
+                    <a href="privacy.html">プライバシーポリシー</a>
+                    <a href="tokushoho.html">特定商取引法に基づく表記</a>
+                </div>
+                <p class="copyright">© 2026 勝目麻希. All rights reserved.</p>
+            </footer>
+        </div>
+    </section>
+</body>
+
+</html>
