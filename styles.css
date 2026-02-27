@@ -1,20 +1,18 @@
 :root {
-    --primary: #8C7B6C;
-    /* Warm Taupe */
-    --primary-light: #B8A694;
-    --secondary: #D4C4B7;
-    /* Soft Sand */
-    --accent: #B29188;
-    /* Dusty Rose */
-    --bg-color: #FDFBF9;
-    /* Warm Off-White */
-    --bg-light: #FFFFFF;
-    --text-main: #2C2C2C;
-    /* Deep Charcoal */
-    --text-muted: #737373;
-    --card-bg: #FFFFFF;
-    --card-border: #F0EBE6;
-    --card-shadow: 0 12px 40px rgba(0, 0, 0, 0.03);
+    --primary: #f2a6a6;
+    /* Elegant Pink */
+    --primary-light: #fbe6e6;
+    /* Light pink for markers */
+    --secondary: #fbc02d;
+    /* Gold / Bright Yellow */
+    --accent: #d98282;
+    --bg-color: #ffffff;
+    --bg-light: #fffafb;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --card-bg: #ffffff;
+    --card-border: #f5ecec;
+    --card-shadow: 0 10px 30px rgba(242, 166, 166, 0.1);
 }
 
 * {
@@ -28,9 +26,8 @@ html {
 }
 
 body {
-    font-family: 'Noto Sans JP', 'Inter', sans-serif;
+    font-family: 'Noto Serif JP', serif;
     font-weight: 300;
-    /* Lighter base weight for elegance */
     background-color: var(--bg-color);
     color: var(--text-main);
     line-height: 1.8;
@@ -57,8 +54,9 @@ h4 {
 }
 
 .text-gradient {
-    color: var(--primary);
-    /* Removing the harsh gradient, adding subtle elegance */
+    color: var(--text-main);
+    background: linear-gradient(transparent 60%, var(--primary-light) 60%);
+    display: inline;
 }
 
 .section-title {
@@ -103,8 +101,8 @@ h4 {
     height: 100%;
     z-index: 0;
     overflow: hidden;
-    background: radial-gradient(circle at 80% 20%, rgba(212, 196, 183, 0.2) 0%, transparent 40%),
-        radial-gradient(circle at 20% 80%, rgba(178, 145, 136, 0.15) 0%, transparent 40%);
+    background: radial-gradient(circle at 80% 20%, rgba(242, 166, 166, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(242, 166, 166, 0.05) 0%, transparent 40%);
 }
 
 .shape {
@@ -135,50 +133,43 @@ h4 {
 .hero-image {
     width: 100%;
     max-width: 700px;
-    /* Make it more prominent like a Peraichi banner */
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(140, 123, 108, 0.2);
+    box-shadow: 0 20px 60px rgba(242, 166, 166, 0.15);
     object-fit: cover;
     aspect-ratio: 16 / 9;
-    /* Changed to landscape to sit well on top */
 }
 
 .hero-pre-title {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 0.95rem;
+    font-weight: 500;
     display: inline-block;
-    margin-bottom: 1rem;
-    color: var(--primary-dark);
+    margin-bottom: 1.5rem;
+    color: #d94a4a;
+    /* Deeper coral pink for contrast */
     letter-spacing: 0.05em;
     font-family: 'Noto Sans JP', sans-serif;
-    background: linear-gradient(transparent 60%, rgba(170, 139, 111, 0.4) 60%);
-    padding: 0 8px;
+    background: #faebeb;
+    /* Very light pink pill background */
+    padding: 6px 16px;
+    border-radius: 30px;
+    border: 1px solid rgba(217, 74, 74, 0.15);
 }
 
 .hero-title {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2.2rem, 5vw, 4rem);
     margin: 0 auto 2rem auto;
     color: var(--text-main);
-    line-height: 1.5;
-    padding: 2.5rem 4rem;
-    border: 1px solid var(--primary-light);
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 10px 30px rgba(140, 123, 108, 0.05);
+    line-height: 1.4;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
     position: relative;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
-/* Elegant inner border effect for the title frame */
-.hero-title::before {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    right: 8px;
-    bottom: 8px;
-    border: 1px solid rgba(170, 139, 111, 0.2);
-    pointer-events: none;
-}
+
 
 .hero-subtitle {
     font-size: 1.1rem;
@@ -197,20 +188,21 @@ h4 {
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(135deg, var(--primary) 0%, #aa8b6f 100%);
-    color: white;
+    background: var(--secondary);
+    color: #333333;
+    /* Dark text for contrast on yellow */
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    padding: 1.4rem 4rem;
     border-radius: 50px;
-    font-weight: 700;
-    font-size: 1.4rem;
+    font-weight: 600;
+    font-size: 1.3rem;
     border: none;
     cursor: pointer;
-    box-shadow: 0 15px 30px -5px rgba(140, 123, 108, 0.4);
+    box-shadow: 0 8px 25px rgba(251, 192, 45, 0.4);
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     text-align: center;
     line-height: 1.5;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
     margin-bottom: 2rem;
 }
 
@@ -220,9 +212,10 @@ h4 {
 }
 
 .cta-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px -5px rgba(140, 123, 108, 0.5);
-    background: linear-gradient(135deg, #aa8b6f 0%, var(--primary) 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(251, 192, 45, 0.5);
+    background: #ffdb33;
+    /* Slightly lighter yellow on hover */
 }
 
 .cta-sub {
@@ -235,15 +228,15 @@ h4 {
 /* Pulsing effect for main CTA */
 @keyframes pulse-shadow {
     0% {
-        box-shadow: 0 0 0 0 rgba(140, 123, 108, 0.4);
+        box-shadow: 0 0 0 0 rgba(251, 192, 45, 0.4);
     }
 
     70% {
-        box-shadow: 0 0 0 20px rgba(140, 123, 108, 0);
+        box-shadow: 0 0 0 20px rgba(251, 192, 45, 0);
     }
 
     100% {
-        box-shadow: 0 0 0 0 rgba(140, 123, 108, 0);
+        box-shadow: 0 0 0 0 rgba(251, 192, 45, 0);
     }
 }
 
@@ -403,7 +396,8 @@ h4 {
     align-items: center;
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, rgba(170, 139, 111, 0.1) 0%, rgba(140, 123, 108, 0.05) 100%);
+    background: #fbe6e6;
+    /* Soft pink background for icons */
     border-radius: 50%;
     margin: 0 auto 1.5rem;
     color: var(--primary);
@@ -441,8 +435,9 @@ h4 {
     left: 24px;
     top: 0;
     height: 100%;
-    width: 1px;
-    background: var(--card-border);
+    width: 2px;
+    /* Slightly thicker line */
+    background: var(--primary-light);
 }
 
 .timeline-item {
@@ -459,19 +454,20 @@ h4 {
     position: absolute;
     left: 4px;
     top: 0;
-    width: 40px;
-    height: 40px;
-    background: var(--bg-light);
-    border: 1px solid var(--primary-light);
+    width: 42px;
+    height: 42px;
+    background: var(--primary);
+    border: 4px solid var(--bg-light);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 400;
-    font-family: 'Inter', serif;
-    font-size: 1.1rem;
-    color: var(--primary);
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    color: white;
     z-index: 2;
+    box-shadow: 0 4px 10px rgba(242, 166, 166, 0.3);
 }
 
 .timeline-content h3 {
@@ -599,11 +595,11 @@ h4 {
     max-width: 650px;
     margin: 0 auto;
     background: var(--bg-light);
-    border: 1px solid var(--card-border);
+    border: 2px solid var(--primary-light);
     position: relative;
     padding: 3.5rem;
-    border-radius: 12px;
-    box-shadow: 0 15px 50px rgba(140, 123, 108, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 15px 50px rgba(242, 166, 166, 0.1);
 }
 
 .apply-title {
