@@ -140,24 +140,20 @@ h4 {
 }
 
 .hero-pre-title {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     font-weight: 500;
     display: inline-block;
-    margin-bottom: 1.5rem;
-    color: #d94a4a;
-    /* Deeper coral pink for contrast */
-    letter-spacing: 0.05em;
-    font-family: 'Noto Sans JP', sans-serif;
-    background: #faebeb;
-    /* Very light pink pill background */
-    padding: 6px 16px;
-    border-radius: 30px;
-    border: 1px solid rgba(217, 74, 74, 0.15);
+    margin-bottom: 2rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--primary-light);
+    font-family: 'Noto Serif JP', serif;
 }
 
 .hero-title {
-    font-size: clamp(2.2rem, 5vw, 4rem);
-    margin: 0 auto 2rem auto;
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    margin: 0 auto 2.5rem auto;
     color: var(--text-main);
     line-height: 1.4;
     padding: 0;
