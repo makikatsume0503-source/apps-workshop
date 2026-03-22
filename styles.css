@@ -184,34 +184,58 @@ h4 {
 
 .cta-button {
     display: inline-block;
-    background: var(--secondary);
+    background: linear-gradient(to bottom, #ffe55c, var(--secondary));
     color: #333333;
     /* Dark text for contrast on yellow */
     text-decoration: none;
-    padding: 1.4rem 4rem;
+    padding: 1.2rem 3rem;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 1.3rem;
-    border: none;
+    font-size: 1.15rem;
+    border: 1px solid #eab011;
     cursor: pointer;
-    box-shadow: 0 8px 25px rgba(251, 192, 45, 0.4);
+    box-shadow:
+        0 8px 25px rgba(251, 192, 45, 0.4),
+        inset 0 2px 0 rgba(255, 255, 255, 0.6),
+        inset 0 -3px 0 rgba(200, 150, 0, 0.2);
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+    transform: translate(-100%, -100%) rotate(45deg);
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.cta-button:hover::after {
+    transform: translate(100%, 100%) rotate(45deg);
 }
 
 .cta-button-large {
-    font-size: 1.6rem;
-    padding: 1.8rem 5rem;
+    font-size: 1.35rem;
+    padding: 1.4rem 3.5rem;
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(251, 192, 45, 0.5);
-    background: #ffdb33;
-    /* Slightly lighter yellow on hover */
+    box-shadow:
+        0 12px 30px rgba(251, 192, 45, 0.5),
+        inset 0 2px 0 rgba(255, 255, 255, 0.8),
+        inset 0 -3px 0 rgba(200, 150, 0, 0.3);
+    background: linear-gradient(to bottom, #ffed85, #ffca28);
+    /* Glossy reflection on hover */
 }
 
 .cta-sub {
@@ -713,6 +737,16 @@ h4 {
 
 /* Responsive Media Queries */
 @media (max-width: 768px) {
+    .cta-button {
+        padding: 1rem 2rem;
+        font-size: 1.05rem;
+    }
+
+    .cta-button-large {
+        padding: 1.1rem 2.2rem;
+        font-size: 1.15rem;
+    }
+
     .section {
         padding: 60px 0;
     }
