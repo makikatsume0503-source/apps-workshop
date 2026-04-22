@@ -135,8 +135,7 @@ h4 {
     max-width: 700px;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(242, 166, 166, 0.15);
-    object-fit: cover;
-    aspect-ratio: 16 / 9;
+    height: auto;
 }
 
 .hero-pre-title {
